@@ -1,0 +1,21 @@
+{
+    "name": "alexander-emelyanov/yii2-articles-module",
+    "description": "Articles management for multilingual web applications",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "yii 2", "articles", "SEO", "multilingual", "copyright"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Emelyanov",
+            "email": "alexander.emelyanov@outlook.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/alexander-emelyanov/yii2-articles-module/issues?state=open",
+        "source": "https://github.com/alexander-emelyanov/yii2-articles-module"
+    },
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {"psr-4": {"AlexanderEmelyanov\\yii\\modules\\articles\\": ""}}
+}
