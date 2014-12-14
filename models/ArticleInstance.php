@@ -59,8 +59,8 @@ class ArticleInstance extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['article_id', 'author_id', 'language', 'created_at', 'updated_at', 'intro_text', 'full_text', 'title', 'meta_keywords', 'meta_description'], 'required'],
-            [['article_id', 'author_id', 'created_at', 'updated_at', 'hits_count'], 'integer'],
+            [['article_id', 'author_id', 'language', 'intro_text', 'full_text', 'title', 'meta_keywords', 'meta_description'], 'required'],
+            [['article_id', 'author_id', 'hits_count'], 'integer'],
             [['published', 'intro_text', 'full_text', 'title', 'meta_keywords', 'meta_description'], 'string'],
             [['language'], 'string', 'max' => 16]
         ];
