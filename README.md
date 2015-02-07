@@ -46,3 +46,18 @@ Run migrations for this module
 ```
 ./yii migrate --migrationPath=@AlexanderEmelyanov/yii/modules/articles/migrations
 ```
+
+### Customization
+
+You can use module layout by default (which extend main layout of application) or specify your desirable layout in module config:
+
+```
+'modules' => [
+      // ... some modules
+      'articles' => [
+          'class' => 'AlexanderEmelyanov\yii\modules\articles\Module',
+          *'layout' => '@app/views/layouts/main',*
+      ],
+      // ... some modules
+    ],
+```
