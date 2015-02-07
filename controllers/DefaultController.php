@@ -3,7 +3,6 @@
 namespace AlexanderEmelyanov\yii\modules\articles\controllers;
 
 use yii\helpers\Url;
-use yii\web\Controller;
 
 /**
  * Class DefaultController

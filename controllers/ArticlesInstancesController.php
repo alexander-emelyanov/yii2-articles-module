@@ -5,7 +5,6 @@ namespace AlexanderEmelyanov\yii\modules\articles\controllers;
 use Yii;
 use AlexanderEmelyanov\yii\modules\articles\models\ArticleInstance;
 use yii\data\ActiveDataProvider;
-use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
