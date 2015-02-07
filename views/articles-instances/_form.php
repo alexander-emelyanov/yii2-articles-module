@@ -1,7 +1,9 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
+use AlexanderEmelyanov\yii\modules\articles\models\Article;
 
 /* @var $this yii\web\View */
 /* @var $model AlexanderEmelyanov\yii\modules\articles\models\ArticleInstance */
@@ -12,7 +14,7 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'article_id')->textInput() ?>
+    <?= $form->field($model, 'article_id')->dropDownList(ArrayHelper::map(Article::find()->all(), 'article_id', 'url_key')) ?>
 
     <?= $form->field($model, 'author_id')->textInput() ?>
 
