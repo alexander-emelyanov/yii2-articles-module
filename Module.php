@@ -14,10 +14,15 @@ use \Yii;
 
 class Module extends \yii\base\Module{
 
+    public $layout = 'main';
+
     public $controllerNamespace = 'AlexanderEmelyanov\yii\modules\articles\controllers';
 
     public function init(){
         parent::init();
+        if (!in_array('layoutsPath', Yii::$aliases)){
+            Yii::setAlias('layoutsPath', Yii::$app->layoutPath);
+        }
         Yii::$app->setHomeUrl('/' . $this->getUniqueId());
     }
 }
