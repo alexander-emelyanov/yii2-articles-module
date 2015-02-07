@@ -21,4 +21,28 @@ or add
 "alexander-emelyanov/yii2-articles-module": "dev-master"
 ```
 
-to the require section of your ```composer.json```
+to the require section of your ```composer.json``` and run ```composer update```
+
+and the next step...
+
+### Configure you Yii2 application
+
+Add 'articles' module to 'module' section of configuration file your application (i recommend add this module to backend application)
+
+```
+    'modules' => [
+      // ... some modules
+      'articles' => [
+          'class' => 'AlexanderEmelyanov\yii\modules\articles\Module',
+      ],
+      // ... some modules
+    ],
+```
+
+### Update database
+
+Run migrations for this module
+
+```
+./yii migrate --migrationPath=@AlexanderEmelyanov/yii/modules/articles/migrations
+```
