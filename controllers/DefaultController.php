@@ -17,6 +17,6 @@ class DefaultController extends Controller{
 
     public function actionIndex()
     {
-        return $this->redirect(Url::to('articles/articles'));
+        return $this->redirect(Url::to('/articles/articles'));
     }
 }
